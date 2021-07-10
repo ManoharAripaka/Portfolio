@@ -1,0 +1,274 @@
+body{
+  margin: 0px;
+  font-family: 'Roboto', sans-serif;
+  /* height: fit-content */
+}
+.Main{
+    color: white;
+}
+.Main img{
+  height: 600px;
+  width: 100%;
+  position: absolute;
+  filter: brightness(30%);
+  z-index: -1
+}
+.navbar{
+  width: 100%;
+  background: #1a1a1a;
+  padding: 0px 0px 2px 30px;
+  position: fixed;
+  display: flex;
+  z-index: 1;
+}
+.navbar .anchor{
+  position: fixed;
+  right: 40px;
+  top: 15px;
+  display: none;
+}
+.navbar .anchor button{
+  padding: 10px 20px 10px 20px;
+  color: white;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  font-size: 16px
+}
+span{
+  color: red;
+}
+.hamburger{
+  position: fixed;
+  border: 3px solid white;
+  padding: 18px;
+  border-radius:50%;
+  cursor: pointer;
+  right: 10px;
+  top: 14px;
+  margin: 0px 15px;
+  display: none;
+}
+.bar1, .bar2, .bar3{
+  border: 2px solid white;
+  border-radius: 10px;
+  position: fixed;
+  top: 25px;
+  right: 36px;
+  width: 15px;
+  display: none
+}
+.bar2{
+  top: 33px;
+}
+.bar3{
+  top: 41px;
+}
+.intro-div{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 75%;
+  top: 250px;
+  height: 600px;
+}
+.intro-div .intro h2{
+  margin: 5px;
+  font-size: 2em;
+  display: block;
+  position: relative;
+  color: transparent;
+  width: fit-content;
+  animation: text_reveal 0.7s ease forwards;
+  animation-delay: 1s;
+}
+#span1, #span2{
+  color: transparent;
+  animation: text_reveal_spt 0.7s ease forwards;
+}
+#span1{
+  animation-delay: 0.7s
+}
+#span2{
+  animation-delay: 1.3s
+}
+.intro-div .intro h2 #anime{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 115%;
+  width: 0%;
+  background-color: red;
+  animation: text_reveal_box 1s ease forwards;
+  animation-delay: 0.5s
+}
+.intro-div .intro h2:nth-child(1) #anime{
+  animation-delay: 0.3s;
+}
+.intro-div .intro h2:nth-child(2) #anime{
+  animation-delay: 1s;
+}
+.intro-div .intro h2:nth-child(1){
+  animation-delay: 0.8s;
+}
+.intro-div .intro h2:nth-child(2){
+  animation-delay: 1.3s;
+}
+.intro-div .intro #port-button{
+  margin: 15px 0px 0px 10px;
+  background-color: transparent;
+  color: red;
+  display: block;
+  border: 3px solid red;
+  border-radius: 40px;
+  padding: 10px 30px;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+.intro-div .intro #port-button:hover {
+  background-color: red;
+  border: 3px solid red;
+  color: white;
+  transition: 0.5s
+}
+#title{
+  font-size: 2em;
+  margin-top: 40px
+}
+.about #about-des{
+  background: lightgrey;
+  border-radius: 10px;
+  margin: 0px 50px 0px 50px;
+  padding: 20px;
+  font-size: 1em;
+  letter-spacing: 1px;
+  text-align: justify;
+  line-height: 1.5;
+}
+.about #res-button{
+  margin: 30px 15px 10px 15px;
+  padding: 10px 30px;
+  border: 3px solid red;
+  background-color: white;
+  border-radius: 40px;
+  color: red;
+  font-size: 1em;
+  font-weight: bold;
+  cursor: pointer;
+}
+.about #res-button:hover{
+  background-color: red;
+  color: white;
+  transition: 0.5s;
+}
+.project-blocks{
+  width: 80%;
+}
+.project-blocks .collapse{
+  width: 100%;
+  border: none;
+  background-color: #302f2f;
+  border-radius: 5px;
+  padding: 15px 30px;
+  text-align: left;
+  font-size: 1em;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  display: block;
+  margin-top: 20px;
+}
+.details{
+  display: none;
+  background-color: lightgrey;
+  padding: 10px 10px 10px 10px;
+  text-align: justify;
+  border: none;
+  border-radius: 5px;
+  margin-top: 3px
+}
+.contact #title{
+  text-align: center;
+}
+.sel{
+  margin-left: 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(90px,90px));
+  justify-content: center;
+}
+.sel img{
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  margin-bottom: 40px
+}
+#disp{
+  display: none;
+  border-radius: 7px;
+  box-shadow: 10px 10px 20px rgba(0,0,0,0.3);
+  background: rgb(235,235,235);
+  margin:0px 20px 40px 20px;
+  padding: 10px;
+  width: 420px
+}
+.foot{
+  width: 100%;
+  height: 50px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-size: 2em;
+  font-weight:bold;
+  padding-top: 10px
+}
+.para{
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top:55px;
+  visibility: hidden;
+  opacity: 0;
+  padding-top: 50px;
+  transition: 0.5s;
+  z-index: 1;
+}
+.slide .para #slide-button{
+  display: block;
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  margin-top: 40px
+}
+@keyframes text_reveal_box{
+  50% {
+    width: 100%;
+    left: 0%;
+  }
+  100%{
+    width: 0%;
+    left: 100%;
+  }
+}
+@keyframes text_reveal{
+  100%{
+    color: white
+  }
+}
+@keyframes text_reveal_spt{
+  100%{
+    color: red
+  }
+}
+@media screen and (min-width: 750px){
+  .navbar .anchor{
+    display: block
+  }
+}
+@media screen and (max-width: 749px){
+  .hamburger, .bar1, .bar2, .bar3{
+    display: block
+  }
+}
