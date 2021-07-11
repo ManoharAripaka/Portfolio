@@ -116,8 +116,8 @@ span{
 }
 .intro-div .intro #port-button{
   margin: 15px 0px 0px 10px;
-  background-color: transparent;
-  color: red;
+  background-color: red;
+  color: white;
   display: block;
   border: 3px solid red;
   border-radius: 40px;
@@ -125,25 +125,22 @@ span{
   font-size: 1.5em;
   font-weight: bold;
 }
-.intro-div .intro #port-button:hover {
-  background-color: red;
-  border: 3px solid red;
-  color: white;
-  transition: 0.5s
-}
 #title{
   font-size: 2em;
   margin-top: 40px
 }
-.about #about-des{
+.about #about-des, .cert{
   background: lightgrey;
   border-radius: 10px;
   margin: 0px 50px 0px 50px;
   padding: 20px;
   font-size: 1em;
-  letter-spacing: 1px;
+  letter-spacing: 0.7px;
   text-align: justify;
   line-height: 1.5;
+}
+.cert{
+  padding: 10px 20px;
 }
 .about #res-button{
   margin: 30px 15px 10px 15px;
@@ -185,7 +182,10 @@ span{
   text-align: justify;
   border: none;
   border-radius: 5px;
-  margin-top: 3px
+  margin-top: 3px;
+  padding: 10px 30px 10px 30px;
+  letter-spacing: 0.5px;
+  line-height: 1.5
 }
 .contact #title{
   text-align: center;
